@@ -103,8 +103,8 @@ class RollCallPlugin(Star):
         """
         while True:
             now = datetime.datetime.now()
-            # 设置今天22:00的目标时间
-            target_time = now.replace(hour=22, minute=0, second=0, microsecond=0)
+            # 设置今天22:00的目标时间(服务器UTC时间，我懒得改了)
+            target_time = now.replace(hour=14, minute=0, second=0, microsecond=0)
             if now >= target_time:
                 target_time += datetime.timedelta(days=1)
             self.next_call_time = target_time
