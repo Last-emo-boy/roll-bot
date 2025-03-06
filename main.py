@@ -7,7 +7,7 @@ from astrbot.api.event import AstrMessageEvent
 from astrbot.api.message_components import Plain, At
 from astrbot.api.event.filter import command
 
-@register("rollcall", "Your Name", "群点名插件，通过指令启动/停止群点名，并支持查询距离下一次点名的时间", "1.0.1", "repo url")
+@register("rollcall", "w33d", "群点名插件，通过指令启动/停止群点名，并支持查询距离下一次点名的时间", "1.0.1", "https://github.com/Last-emo-boy/roll-bot")
 class RollCallPlugin(Star):
     def __init__(self, context: Context):
         super().__init__(context)
